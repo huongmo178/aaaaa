@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#content {
+    position: relative;
+    padding-top: 50%;
+    background: url(/assets/css/img/pngtree-yellow-lanterns-watermelon-and-rice-dumplings-vietnamese-new-year-background-image_557854.jpg) bottom center / cover no-repeat;
+}
+#text {
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 300px;    
+}
+.btn  {
+    background-color: red;
+    color: #fff;
+    line-height: 46px;
+    width: 100px;
+    border: none;
+}
+.btn:hover {
+    opacity: 0.6;
+    color: #000;
+}
+.open {
+    display: flex;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.open  {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFaceIn ease 0.45s;
+}
+.modal-header {
+    height: 130px;
+    background-color: hsl(174, 100%, 29%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+.close {
+    color: #000;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    padding: 12px;
+    opacity: 0.8;
+}
+.close:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.modal-content {
+    padding: 64px;
+    list-style-type: none;
+    text-align: justify;
+}
+.header {
+    margin-bottom: 32px;
+    font-size: 54px;
+}
+.answer {
+    font-size: 24px;
+}
+.troll {
+    display: none;
+}
